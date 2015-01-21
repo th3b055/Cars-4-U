@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Question</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<img src="http://motoburg.com/images/ford-mustang-boss-302-03.jpg"> 
+		<p>Which car is shown above?</p>
+		<form action="/question10" method="get">
+  			<p><input type="radio" name="answer" value="A">Impala</p>
+  			<p><input type="radio" name="answer" value="B">Mustang Boss 302</p>
+  			<p><input type="radio" name="answer" value="C">Camaro</p>
+  			<p><input type="radio" name="answer" value="D">Mustang Cobra Jet</p>
+  			<input type="submit">
+		</form>
+		<p><%= SCORE %></p>
+	</body>
+</html>

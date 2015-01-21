@@ -1,1 +1,18 @@
-question4.erb
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fourth Question</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<p>Rounded to the nearest digit, what is the fastest land speed ever recorded?</p>
+		<form action="/question5" method="get">
+  			<p><input type="radio" name="answer" value="A">300 mph</p>
+  			<p><input type="radio" name="answer" value="B">530 mph</p>
+  			<p><input type="radio" name="answer" value="C">760 mph</p>
+  			<p><input type="radio" name="answer" value="D">100 mph</p>
+  			<input type="submit">
+		</form>
+		<p><%= SCORE %></p>
+	</body>
+</html>

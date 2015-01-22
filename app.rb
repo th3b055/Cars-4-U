@@ -78,15 +78,15 @@ class MyApp < Sinatra::Base
   end
 
     get '/question11' do
-     if params[:answer]=="B"
+      if params[:answer]=="B"
        SCORE += 10
-       end
-    redirect '/results'
-  end
+      end
+      redirect '/results'
+    end
 
     get '/results' do 
         SCORE
       erb :results
-  end
+    end
  
 end
